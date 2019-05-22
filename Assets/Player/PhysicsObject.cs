@@ -10,6 +10,7 @@ public class PhysicsObject : MonoBehaviour {
 
     protected Vector2 targetVelocity;
     protected bool grounded;
+    protected bool colliding;
     protected Vector2 groundNormal;
     protected Rigidbody2D rb2d;
     protected Vector2 velocity;
@@ -49,6 +50,7 @@ public class PhysicsObject : MonoBehaviour {
         velocity.x = targetVelocity.x;
 
         grounded = false;
+        colliding = false;
 
         Vector2 deltaPos = velocity * Time.deltaTime;
 
@@ -77,9 +79,10 @@ public class PhysicsObject : MonoBehaviour {
                 hitBufferList.Add(hitBuffer[i]);
             }
 
+          
             for(int i = 0; i < hitBufferList.Count; i++)
             {
-                Vector2 currentNormal = hitBufferList[i].normal;
+                colliding = true;                Vector2 currentNormal = hitBufferList[i].normal;
                 if(currentNormal.y > minGroundNormalY)
                 {
                     grounded = true;

@@ -90,9 +90,9 @@ public class PlayerPlatformerController : PhysicsObject {
         //Jump while grounded. Change to implement double jump
         if(Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (grounded || (currentStance == 1 && canDoubleJump))
+            if ((grounded) || (colliding) || (currentStance == 1 && canDoubleJump))
             {
-                if(!grounded)
+                if((!grounded)||(!colliding))
                 {
                     //Player is double jumping
                     canDoubleJump = false;
