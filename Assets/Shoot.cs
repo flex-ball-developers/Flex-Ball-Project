@@ -8,7 +8,7 @@ public class Shoot : MonoBehaviour {
     public Vector2 spawnPoint;
     public Vector2 dir;
     public Vector2 target;
-    public float bulletSpeed = 5;
+    public float bulletSpeed = 5f;
 
   
 
@@ -16,16 +16,25 @@ public class Shoot : MonoBehaviour {
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         //Enemy bullet
-        target.x = Player.transform.position.x;
+        //target.x = Player.transform.position.x;
+        //target.y = Player.transform.position.y;
+        //spawnPoint = gameObject.transform.position;
+
+        //Player to the right
+        target.x = Player.transform.position.x + 1;
         target.y = Player.transform.position.y;
-        spawnPoint = gameObject.transform.position;
+        spawnPoint = Player.transform.position;
+
+        
 
 
-        dir = spawnPoint - target;
+        dir = target - spawnPoint;
+        rb2d.velocity = dir.normalized * bulletSpeed;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        rb2d.position = dir;
-	}
+        
+   
+    }
 }
