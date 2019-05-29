@@ -16,16 +16,16 @@ public class Shoot : MonoBehaviour {
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         //Enemy bullet
-        //target.x = Player.transform.position.x;
-        //target.y = Player.transform.position.y;
-        //spawnPoint = gameObject.transform.position;
+        target.x = Player.transform.position.x;
+        target.y = Player.transform.position.y;
+        spawnPoint = gameObject.transform.position;
 
         //Player to the right
-        target.x = Player.transform.position.x + 1;
-        target.y = Player.transform.position.y;
-        spawnPoint = Player.transform.position;
+        //target.x = Player.transform.position.x + 1;
+        //target.y = Player.transform.position.y;
+        //spawnPoint = Player.transform.position;
 
-        
+
 
 
         dir = target - spawnPoint;

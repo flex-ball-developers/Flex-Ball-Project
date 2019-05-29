@@ -61,20 +61,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Enemy_Controller.cs" />
     <Compile Include="Assets\Player\PhysicsObject.cs" />
     <Compile Include="Assets\Player\PlayerPlatformerController.cs" />
     <Compile Include="Assets\Shoot.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Users/jacob.gal8369/Documents/GitHub/Flex-Ball-Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>H:/New folder/Sem 2/DGD/Flex Ball/Flex-Ball-Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Users/jacob.gal8369/Documents/GitHub/Flex-Ball-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>H:/New folder/Sem 2/DGD/Flex Ball/Flex-Ball-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Users/jacob.gal8369/Documents/GitHub/Flex-Ball-Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>H:/New folder/Sem 2/DGD/Flex Ball/Flex-Ball-Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Users/jacob.gal8369/Documents/GitHub/Flex-Ball-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>H:/New folder/Sem 2/DGD/Flex Ball/Flex-Ball-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/apps/unity/2018.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
